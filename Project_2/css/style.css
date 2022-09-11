@@ -235,3 +235,26 @@ ul li a:hover {
   text-decoration: none;
   color: wheat;
 }
+.myinfo {
+  color: #fff;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 150px;
+  width: 250px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  border-radius: 15px;
+  margin: auto;
+}
+
+.myinfo span {
+  color: #ff7200;
+  font-size: 15px;
+}
