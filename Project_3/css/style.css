@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(to right, rgb(164, 92, 227), rgb(232, 42, 169));
+}
+.calculator-grid {
+  padding: 20px;
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  justify-content: center;
+}
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  display: flex;
+  grid-column: 1/-1;
+  background: rgba(29, 16, 44, 0.5);
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+}
+
+.output .previous-operand {
+  font-size: 1.5rem;
+  color: rgba(218, 211, 211, 0.9);
+}
+
+.output .current-operand {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+.calculator-grid > button:hover,
+.calculator-grid > button:focus {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.cal2 {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(4, 6rem);
+  justify-content: center;
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+}
+.two {
+  grid-column: span 2;
+}
+.output2 {
+  border: 2px solid rgb(220, 133, 216);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  grid-column: 1/-1;
+  background: rgba(56, 4, 246, 0.1);
+  border-radius: 50px;
+}
+.output2 .prev {
+  color: rgb(220, 217, 217);
+  font-size: 1.5rem;
+}
+.output2 .curr {
+  color: rgb(246, 246, 246);
+  font-size: 2.5rem;
+}
+
+.cal2 > button {
+  cursor: pointer;
+  font-size: 30px;
+  background: rgba(253, 245, 245, 0.7);
+  outline: none;
+  border: 1px solid rgba(255, 0, 51, 0.45);
+  transition: 0.4s;
+  border-radius: 50px;
+  margin: 10px;
+  font-family:cursive;
+}
+.cal2 button:hover,
+.cal2 button:focus {
+  background: rgb(253, 245, 245);
+  border: 3px solid rgb(255, 0, 225);
+  scale: 1.2;
+}
